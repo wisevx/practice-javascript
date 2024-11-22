@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>ゲーム</title>
+        <script src="main.js" defer></script>
+        <script src ="ClickCounterGame.js" defer></script>
+        <script src ="NumberGuessGame.js" defer></script>
+        <script src ="RPS.js" defer></script>
+    </head>
+    <body>
+      <h1>ゲームを選択してください</h1>
+      <select id="game-selector">
+        <option value="none">--ゲームを選んでください--</option>
+        <option value="click-counter">クリッカーゲーム</option>
+        <option value="number-guess">数あてゲーム</option>
+        <option value="rps">じゃんけんゲーム</option>
+      </select>
+        <div id="game-container"></div>
+    </body>
+</html>
