@@ -12,17 +12,17 @@ function NumberGuessGame(){
         if (userGuess === randomNumber){
             message.textContent = "正解！";
         }
-        else if (difference <= 10){
-            message.textContent = "もっと大きい数字です";
-        }
         else if (difference <= 5){
             message.textContent = "惜しい!あと少し大きいです";
         }
-        else if (difference >= 10){
-            message.textContent = "もっと小さい数字です";
+        else if (difference <= 10){
+            message.textContent = "もっと大きい数字です";
         }
         else if (difference >= 5){
             message.textContent = "惜しい！あと少し小さいです";
+        }
+        else if (difference >= 10){
+            message.textContent = "もっと小さい数字です";
         }
         })
     gameContainer.appendChild(input);
